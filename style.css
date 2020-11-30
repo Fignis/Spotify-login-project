@@ -1,11 +1,17 @@
 :root {
   --main1cl: rgb(255, 70, 50);
   --txt: black;
+  --main2cl: #2d46b9;
+  --txt2: #1ed760;
 }
 body {
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/* entire orange section of page */
 section.main {
   display: flex;
   flex-direction: column;
@@ -16,32 +22,49 @@ section.main {
   margin: 35 16px;
   padding-top: 70px;
 }
+/* wraps both the text and image section */
 .wrapper {
   display: flex;
   flex-direction: row;
 }
+
 .mtxt {
   width: 50%;
   padding-left: 50px;
   text-align: left;
 }
-.mimage {
-  background: url("holiday-2020-balloons.png");
+.mtxt h1 {
+  font-size: 60px;
+  font-weight: 700;
   width: 500px;
-  height: 500px;
+  height: 100px;
+}
+.mtxt h2 {
+  font-weight: 300;
+  font-size: 18px;
+  width: 600px;
+}
+/*ballon image section of page */
+.mimage {
+  background: url("holiday-2020-balloons.png") no-repeat;
+  width: 400px;
+  height: 400px;
   display: flex;
   background-size: contain;
   margin: auto;
   padding-left: 60px;
+  padding-bottom: 200px;
 }
+/*small text */
 #smol {
   display: inline-block;
   font-size: 13px;
-  width: 700px;
+  width: 500px;
 }
 #smol a {
   color: var(--txt);
 }
+/*button animation there is a bug in this first one */
 .button {
   background: var(--txt);
   width: 250px;
@@ -53,4 +76,83 @@ section.main {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 2px;
+}
+.button:hover {
+  animation: changecolor 1s;
+}
+@keyframes changecolor {
+  from {
+    background: var(--txt);
+  }
+  to {
+    background: white;
+    color: var(--txt);
+  }
+}
+/*second half of page.*/
+
+#top {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* entire blue section of page */
+section.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--txt2);
+  background-position: center;
+  background-color: var(--main2cl);
+  background-repeat: no-repeat;
+  background-image: url(LiE_circles.svg);
+  background-size: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 35 16px;
+  padding-top: 70px;
+  min-height: 590px;
+}
+
+.mtxt2 {
+  text-align: left;
+  padding-right: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.mtxt2 h3 {
+  font-size: 64px;
+  height: 64px;
+  font-weight: 700;
+  max-width: 500px;
+}
+.mtxt2 p {
+  font-weight: 300;
+  margin: 0;
+  display: block;
+  height: 20px;
+}
+.button2 {
+  background: var(--txt2);
+  width: 250px;
+  padding: 15px;
+  color: var(--main2cl);
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.button2:hover {
+  animation: changecolor normal 0.8s;
+}
+@keyframes changecolor {
+  from {
+    background: var(--txt2);
+  }
+  to {
+    background: white;
+    transform: scale(1.03);
+    color: var(--txt);
+  }
 }
