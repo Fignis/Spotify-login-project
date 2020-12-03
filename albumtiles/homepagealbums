@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="homepagegrid.css">
+</head>
+
+<body>
+    <div>
+        <h2 class="main-upper">Looking for music?</h2>
+        <p>
+            <h4 class="main-lower"> Start listening to the best new releases.</h4>
+        </p>
+        <button class="btn">
+            Launch Web Player
+        </button>
+        <div class="contain">
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">Beach House 3</h2>
+                    <h4 class="album-artist">Ty Dolla $ign</h4>
+                    <button class="album-btn">
+                        PLAY NOW
+                    </button>
+                </div>
+                <img class="album" src="BeachHouse3.jpg" alt="Beach House 3">
+            </div>
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">MotorSport</h2>
+                    <h4 class="album-artist">Migos</h4>
+                    <button class="album-btn">
+                            PLAY NOW
+                        </button>
+                </div>
+                <img class="album" src="MotorSport.jpg" alt="MotorSport">
+            </div>
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">Wolves</h2>
+                    <h4 class="album-artist">Selena Gomez</h4>
+                    <button class="album-btn">
+                                PLAY NOW
+                            </button>
+                </div>
+                <img class="album" src="Wolves.jpg" alt="Wolves">
+            </div>
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">Meaning of Life</h2>
+                    <h4 class="album-artist"> Kelly Clarkson</h4>
+                    <button class="album-btn">
+                                    PLAY NOW
+                                </button>
+                </div>
+                <img class="album" src="MeaningofLife.jpg" alt="Meaning of Life">
+            </div>
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">Pacific Daydream</h2>
+                    <h4 class="album-artist">Weezer</h4>
+                    <button class="album-btn">
+                                        PLAY NOW
+                                    </button>
+                </div>
+                <img class="album" src="PacificDaydream.jpg" alt="Pacific Daydream">
+            </div>
+            <div class="box">
+                <div class="album-txt">
+                    <h2 class="album-title">Por Favor</h2>
+                    <h4 class="album-artist">Pitbull</h4>
+                    <button class="album-btn">
+                                            PLAY NOW
+                                        </button>
+                </div>
+                <img class="album" src="PorFavor.jpg" alt="Por Favor">
+            </div>
+        </div>
+</body>
+
+</html>
