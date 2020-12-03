@@ -7,12 +7,14 @@
   --ft: "Circular Spotify Tx T Bold";
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--ft);
 }
 body {
   margin: 0;
-  width: 100%;
-  font-family: var(--ft);
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 /*Header styling*/
 .header-nav {
@@ -42,19 +44,18 @@ header {
   height: 37.89px;
   margin-right: 470px;
 }
-
+.stick {
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 a:hover {
   color: #52d54d;
 }
 /*main*/
 
-body {
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 /* entire orange section of page */
 section.main {
   display: flex;
