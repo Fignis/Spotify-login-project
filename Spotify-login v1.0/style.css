@@ -1,0 +1,428 @@
+@import url(//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold);
+:root {
+  --main1cl: rgb(255, 70, 50);
+  --txt: black;
+  --main2cl: #2d46b9;
+  --txt2: #1ed760;
+  --ft: "Circular Spotify Tx T Bold";
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: var(--ft);
+}
+/*Header styling*/
+.header-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+}
+.header-menu {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: bold;
+  padding: 20px;
+  width: 100%;
+}
+.divider {
+  color: #eeeeee;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+.header-logo {
+  width: 132px;
+  height: 37.89px;
+  margin-right: 470px;
+}
+
+a:hover {
+  color: #52d54d;
+}
+/*main*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* entire orange section of page */
+section.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main1cl);
+  box-sizing: border-box;
+  text-align: left;
+  margin: 35 16px;
+  padding-top: 70px;
+}
+/* wraps both the text and image section */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.mtxt {
+  width: 50%;
+  padding-left: 50px;
+  text-align: left;
+}
+.mtxt h1 {
+  font-size: 60px;
+  font-weight: 700;
+  width: 500px;
+  height: 100px;
+}
+.mtxt h2 {
+  font-weight: 300;
+  font-size: 18px;
+  width: 600px;
+}
+/*ballon image section of page */
+.mimage {
+  background: url("images/balloon.png") no-repeat;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  background-size: contain;
+  margin: auto;
+  padding-left: 60px;
+  padding-bottom: 200px;
+}
+/*small text */
+#smol {
+  display: inline-block;
+  font-size: 13px;
+  width: 500px;
+}
+#smol a {
+  color: var(--txt);
+}
+/*button animation there is a bug in this first one */
+.button {
+  background: var(--txt);
+  width: 250px;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+  user-select: none;
+  cursor: pointer;
+}
+.button:hover {
+  animation: changecolor 1s;
+}
+@keyframes changecolor {
+  from {
+    background: var(--txt);
+  }
+  to {
+    background: white;
+    color: var(--txt);
+  }
+}
+/*second half of page.*/
+
+#top {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* entire blue section of page */
+section.main2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--txt2);
+  background-position: center;
+  background-color: var(--main2cl);
+  background-repeat: no-repeat;
+  background-image: url("images/circles.svg");
+  background-size: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  margin: 35 16px;
+  padding-top: 70px;
+  min-height: 590px;
+}
+/*text area */
+.mtxt2 {
+  text-align: left;
+  padding-right: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.mtxt2 h3 {
+  font-size: 64px;
+  height: 64px;
+  font-weight: 700;
+  max-width: 500px;
+}
+.mtxt2 p {
+  font-weight: 300;
+  margin: 0;
+  display: block;
+  height: 20px;
+}
+/*new button */
+.button2 {
+  background: var(--txt2);
+  width: 250px;
+  padding: 15px;
+  color: var(--main2cl);
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2px;
+  user-select: none;
+  cursor: pointer;
+}
+.button2:hover {
+  animation: changecolor normal 0.8s;
+}
+@keyframes changecolor {
+  from {
+    background: var(--txt2);
+  }
+  to {
+    background: white;
+    transform: scale(1.03);
+    color: var(--txt);
+  }
+}
+
+/*song grid */
+.grid-section {
+  text-align: center;
+}
+.main-upper {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.main-lower {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 9px;
+  margin-bottom: 24px;
+}
+
+.album-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.48px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  user-select: none;
+}
+
+.album-artist {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(145, 148, 150);
+  font-style: normal;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 9px;
+  user-select: none;
+}
+
+.album-btn {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(30, 215, 96);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 500px;
+  border: black;
+  box-shadow: rgb(97, 100, 103) 0px 0px 0px 2px inset;
+  color: rgb(97, 100, 103);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+  padding-bottom: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(97, 100, 103);
+}
+
+.contain {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  height: 374px;
+  width: 374px;
+  margin: 0.5rem;
+  box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  text-align: center;
+  opacity: 1;
+}
+
+.album-txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0, 1) 0s;
+  height: 374px;
+  width: 374px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* .box:hover {
+      opacity: 1;
+  } */
+
+.album-txt:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.album {
+  width: 100%;
+  position: relative;
+}
+
+/*Footer Styling*/
+p {
+  margin: 0;
+  padding: 10px;
+}
+.footer-container {
+  color: rgb(145, 145, 145);
+  font-weight: bold;
+  font-size: 14px;
+  background-color: black;
+  width: 100%;
+  height: 20rem;
+  padding-top: 100px;
+  padding-left: 385px;
+}
+.footer-menu {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: lighter;
+  font-size: 15.5px;
+  display: block;
+}
+.footer-nav {
+  background-color: black;
+  margin: 0;
+}
+.footer-child {
+  width: 10%;
+  float: left;
+}
+a {
+  padding: 10px;
+}
+.footer-info {
+  background-color: black;
+  margin: 0;
+  color: white;
+  padding-left: 385px;
+  border: none;
+  width: 100%;
+  padding-bottom: 65px;
+}
+.footer-legal {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+  font-size: 11.5px;
+  font-weight: bold;
+}
+.footer-child img {
+  width: 132px;
+  height: 37.89px;
+  margin-right: 470px;
+}
+.Region {
+  display: inline-block;
+  color: rgb(168, 168, 168);
+  padding-left: 370px;
+  font-size: 11.5px;
+  font-weight: bolder;
+}
+.Region-text {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+  padding-left: 55px;
+}
+.us-flag {
+  width: 24px;
+  height: 18px;
+}
+.region img {
+  width: 132px;
+  height: 37.89px;
+  margin-right: 470px;
+}
+
+#circle {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: blue;
+}

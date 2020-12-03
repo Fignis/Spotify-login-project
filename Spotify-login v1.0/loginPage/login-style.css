@@ -1,0 +1,192 @@
+@import url(//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold);
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100%;
+  font-family: "Circular Spotify Tx T Bold";
+}
+.top {
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  padding-top: 25px;
+  padding-bottom: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.logo {
+  background-image: url("../images/spotify.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  display: inline-block;
+  padding-top: 60px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 430px;
+  justify-content: space-evenly;
+  font-size: 15px;
+}
+.container p {
+  font-size: 16px;
+}
+.fbbut {
+  flex: 1;
+  margin: 5px;
+  background: #3b5998;
+  padding: 13px;
+  border-radius: 20px;
+  display: block;
+  color: white;
+  width: 28rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.fa-facebook {
+  border-radius: 35px;
+  color: #3b5998;
+  background: white;
+  padding: 5px 5px 0 5px;
+  display: block;
+}
+.appbut {
+  margin: 5px;
+  flex: 1;
+  background: #202020;
+  padding: 13px;
+  border-radius: 20px;
+  display: block;
+  color: white;
+  width: 28rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.gbut {
+  margin: 5px;
+  flex: 1;
+  background: white;
+  padding: 13px;
+  border-radius: 20px;
+  display: block;
+  color: gray;
+  border: 2px solid grey;
+  width: 28rem;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.line {
+  border-top: 1px gainsboro solid;
+  display: block;
+  margin: 15px;
+  text-align: center;
+  width: 28rem;
+  line-height: 1px;
+}
+.line h2 {
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0 19px;
+  padding: 2px;
+  background: white;
+  text-transform: uppercase;
+}
+
+/*Form Section*/
+.login-container {
+  margin: 0;
+  text-align: left;
+}
+.text {
+  margin: 10px;
+  width: 450px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+input {
+  width: 450px;
+  height: 40px;
+  padding: 9px;
+  border: grey solid 0.5px;
+  align-self: center;
+  opacity: 70%;
+}
+#password-recovery {
+  width: 450px;
+  margin-top: 20px;
+}
+.p-recover-link {
+  text-align: left;
+  color: #616467;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.p-recover-link:hover {
+  color: rgb(91, 150, 4);
+}
+.check-container {
+  width: 1000px;
+}
+#checkBox {
+  margin-top: 30px;
+}
+.btn-primary {
+  font-family: Helvetica, Arial, sans-serif;
+  opacity: 70%;
+}
+#check-button {
+  width: 20px;
+  height: 20px;
+  opacity: 100%;
+}
+#login-btn {
+  width: 210px;
+  height: 48px;
+  border-radius: 50px;
+  border: 1px;
+  background-color: rgb(31, 134, 54);
+  color: #eeeeee;
+  font-weight: bolder;
+  margin-left: 120px;
+}
+#login-btn:hover {
+  opacity: 80%;
+  lighting-color: rgb(203, 247, 138);
+}
+.line-bot {
+  border-top: 1px gainsboro solid;
+  display: block;
+  margin: 15px;
+  text-align: center;
+  width: 28rem;
+  line-height: 1px;
+}
+/*Sign up*/
+.sign-up {
+  text-align: center;
+}
+.sign-up-btn {
+  width: 420px;
+  height: 50px;
+  border-radius: 40px;
+  background: white;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 80%;
+}
+.sign-up-btn:hover {
+  background: rgb(77, 77, 77);
+  color: white;
+}
