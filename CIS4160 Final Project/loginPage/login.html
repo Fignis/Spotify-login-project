@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-style.css">
+    <link href="//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold"
+        rel="stylesheet" type="text/css" />
+    <title>Spotify Login</title>
+</head>
+
+<body>
+    <div class="top">
+        <a href="#" class="logo">
+        </a>
+    </div>
+    <div class="container">
+        <p>To continue, login into Spotify</p>
+        <a class="fbbut"><i class="fa fa-facebook" aria-hidden="true"></i>Continue with Facebook</a>
+        <a class="appbut"><i class="fa fa-apple" aria-hidden="true"></i>Continue with
+            Apple</a>
+        <a class="gbut"><i class="fa fa-google" aria-hidden="true"></i>Continue with
+            Google</a>
+
+        <div class="line">
+            <h2>Or</h2>
+        </div>
+
+        <div class="login-container">
+            <form class="login-form">          
+                <p class="text">Email Address or Username</p>
+                <input type="email" placeholder="Email address or Username">
+                <p class="text">Password</p>
+                <input type="password" placeholder="Password">
+                <!--Password Recovery Section-->
+                <div id="password-recovery">
+                    <a class="p-recover-link" href="https://www.spotify.com/password-reset/">Forgot your password?</a>
+                </div>
+                <!--Checkbox section-->
+                <div id="check-container">
+                    <div id="checkBox">
+                        <label class="btn btn-primary active">
+                            <input type="checkbox" name="remember" id="check-button" checked autocomplete="off">Remember me
+                        </label>
+                        <button id="login-btn">LOG IN</button>
+                    </div>
+                </div>
+
+                <div class="line-bot"></div>
+                <!--Sign up Section-->
+                <div class="sign-up">
+                    <p>Don't have an account?</p>
+                    <button class="sign-up-btn">SIGN UP FOR SPOTIFY</button>
+                </div>
+            </form>
+        </div>    
+    </div>
+    
+
+    <script src="https://use.fontawesome.com/9fb76ae2a3.js"></script>
+</body>
+
+</html>
