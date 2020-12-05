@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/loginPage/login-style.css">
+    <link rel="stylesheet" href="/Spotify-login v1.0/style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section class="edit-container">
+        <h1 id="editTitle">Edit Profile</h1>
+        <form method="GET" action="#" class="login-form">
+            <div>
+                <p class="text">Email</p>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div>
+                <p class="text">Password</p>
+                <input type="password" disabled name="password" placeholder="Password">
+            </div>
+            <div>
+                <p class="text">Gender</p>
+                <select class="selGendOpt">
+                    <option>
+                        Male
+                    </option>
+                    <option>
+                        Female
+                    </option>
+                </select>
+            </div>
+
+            <div>
+                <p class='text'>Date of birth</p>
+                <div class="dob">
+                    <input required id="dobDay" type="text" name="day">
+                    <label for="dobDay">Date</label>
+                    <label for="dobMon">Month</label>
+                    <select id="dobMon">
+                        <option value="january">
+                            January
+                        </option>
+                        <option value="feburary">
+                            Feburary
+                        </option>
+                        <option value="march">
+                            March
+                        </option>
+                        <option value="april">
+                            April
+                        </option>
+                        <option value="may">
+                            May
+                        </option>
+                        <option value="june">
+                            June
+                        </option>
+                        <option value="july">
+                            July
+                        </option>
+                        <option value="august">
+                            August
+                        </option>
+                        <option value="september">
+                            September
+                        </option>
+                        <option value="october">
+                            October
+                        </option>
+                        <option value="november">
+                            November
+                        </option>
+                        <option value="december">
+                            December
+                        </option>
+                    </select>
+                    <label for="dobYr">Year</label>
+                    <input required id="dobYr" type="text" name="year" placeholder="">
+                </div>
+            </div>
+            <div>
+                <p class="text">Country or region</p>
+                <select id="country" class="selGendOpt">
+                    <option value="us">USA</option>
+                </select>
+            </div>
+            <div class="chkbxSmall" id="checkBox">
+                <input type="checkbox" name="remember" checked autocomplete="off">
+                <p> Share my registration data with Spotify's content providers for marketing purposes.</p>
+            </div>
+            <div class="line"></div>
+            <div class="save-profile">
+                <a href="#">Cancel</a>
+                <button class="button2">Save Profile</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+
+</html>
