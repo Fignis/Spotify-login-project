@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Replica</title>
+    <link rel="stylesheet" href="stylePage.css">
+    <link rel="stylesheet" href="/loginPage/login-style.css">
+    <link rel="stylesheet" href="/Spotify-login v1.0/style.css">
+</head>
+<body>
+    <!--Header Nav-->
+    <header>
+        <div class="container">
+            <ul class="header-nav">
+                <a class="header-menu" href="index.html"><img class = "header-logo" src="imgs/Spotify_Logo_CMYK_White.png"></a>
+                <a class="header-menu" href="https://www.spotify.com/us/premium/">Premium</a>
+                <a class="header-menu" href="https://support.spotify.com/us/">Support</a>
+                <a class="header-menu" href="https://www.spotify.com/us/download/windows/">Download</a>
+                <a class="divider">|</a>
+                <div class="dropdown">
+                    <button class="profile-menu"><img class="profile-icon-top" src="imgs/profile-icon-top.svg">Profile
+                        <i class="arrow down"></i></button>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="wrapper">
+            <div class="mtxt">
+                <div>
+                    <h1>
+                        Get 3 months of Premium for free
+                    </h1>
+                </div>
+                <div>
+                    <h2>Enjoy ad-free music, offline listening, and more. Cancel anytime.</h2>
+                </div>
+                <div class="button">
+                    Get 3 Months Free
+                </div>
+                <div>
+                    <p id="smol">
+                        Individual plan only. Only $9.99/month after. Offer not available to users who already tried
+                        Premium.<a href="https://www.spotify.com/legal/premium-promotional-offer-terms%22%3E">Terms
+                            and conditions apply.</a>Offer ends Dec 31, 2020.
+                    </p>
+                </div>
+            </div>
+            <div class="mimage">
+            </div>   
+        </div>
+    </section>
+    
+    <div class="sideNav">
+        <div class="wrap">
+            <div class="vertical-menu">
+                <img class="profile-icon" src="imgs/profile-icon.png">
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#" class="active">Account overview</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Edit profile</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Change password</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Notification settings</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Privacy settings</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Recover playlists</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Receipts</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Apps</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+                <a href="#">Redeem</a>
+                <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
+              </div>
+        </div> 
+
+        <div class="account-page">
+            <section class="edit-container">
+                <h1 id="editTitle">Edit Profile</h1>
+                <form method="GET" action="#" class="login-form">
+                    <div>
+                        <p class="text">Email</p>
+                        <input type="text" name="username" placeholder="Username">
+                    </div>
+                    <div>
+                        <p class="text">Password</p>
+                        <input type="password" disabled name="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <p class="text">Gender</p>
+                        <select class="selGendOpt">
+                            <option>
+                                Male
+                            </option>
+                            <option>
+                                Female
+                            </option>
+                        </select>
+                    </div>
+        
+                    <div>
+                        <p class='text'>Date of birth</p>
+                        <div class="dob">
+                            <input required id="dobDay" type="text" name="day">
+                            <label for="dobDay">Date</label>
+                            <label for="dobMon">Month</label>
+                            <select id="dobMon">
+                                <option value="january">
+                                    January
+                                </option>
+                                <option value="feburary">
+                                    Feburary
+                                </option>
+                                <option value="march">
+                                    March
+                                </option>
+                                <option value="april">
+                                    April
+                                </option>
+                                <option value="may">
+                                    May
+                                </option>
+                                <option value="june">
+                                    June
+                                </option>
+                                <option value="july">
+                                    July
+                                </option>
+                                <option value="august">
+                                    August
+                                </option>
+                                <option value="september">
+                                    September
+                                </option>
+                                <option value="october">
+                                    October
+                                </option>
+                                <option value="november">
+                                    November
+                                </option>
+                                <option value="december">
+                                    December
+                                </option>
+                            </select>
+                            <label for="dobYr">Year</label>
+                            <input required id="dobYr" type="text" name="year" placeholder="">
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text">Country or region</p>
+                        <select id="country" class="selGendOpt">
+                            <option value="us">USA</option>
+                        </select>
+                    </div>
+                    <div class="chkbxSmall" id="checkBox">
+                        <input type="checkbox" name="remember" checked autocomplete="off">
+                        <p> Share my registration data with Spotify's content providers for marketing purposes.</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="save-profile">
+                        <a href="#">Cancel</a>
+                        <button class="button2">Save Profile</button>
+                    </div>
+                </form>
+            </section>
+        </div>  
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-child"><a href="index.html"><img src="imgs/Spotify_Logo_CMYK_White.png"></a></div>
+            <div class="footer-child">
+                <ul class="footer-nav">
+                    <p>COMPANY</p>
+                    <a class="footer-menu" href="#">About</a>
+                    <a class="footer-menu" href="#">Jobs</a>
+                    <a class="footer-menu" href="#">For the Record</a>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <ul class="footer-nav">
+                    <p>COMMUNITIES</p>
+                    <a class="footer-menu" href="#">For Artists</a>
+                    <a class="footer-menu" href="#">Developers</a>
+                    <a class="footer-menu" href="#">Advertising</a>
+                    <a class="footer-menu" href="#">investors</a>
+                    <a class="footer-menu" href="#">Vendors</a>
+                </ul>
+            </div>
+            <div class="footer-child">
+                <ul class="footer-nav">
+                    <p>USEFUL LINKS</p>
+                    <a class="footer-menu" href="#">Support</a>
+                    <a class="footer-menu" href="#">Web Player</a>
+                    <a class="footer-menu" href="#">Free Mobile App</a>
+                    <a class="footer-menu" href="#">2020 Wrapped</a>
+                </ul>
+            </div>
+        </div>
+        <!--footer at the very bottom-->
+        <div class="footer-bot">
+            <ul class="footer-info">
+                <a class="footer-legal" href="#">Legal</a>
+                <a class="footer-legal" href="#">Privacy Center</a>
+                <a class="footer-legal" href="#">Privacy Policy</a>
+                <a class="footer-legal" href="#">Cookies</a>
+                <a class="footer-legal" href="#">About Ads</a>
+                <a class="footer-legal" href="#">Additional CA Privacy Disclosures</a>
+                <div class="Region">
+                    <a class="Region-text" href="#">USA
+                        <img class="us-flag" src="imgs/usflag.png"></a>
+                    <p>@2020 Spotify AB</p>
+                </div>
+                                
+            </ul>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>

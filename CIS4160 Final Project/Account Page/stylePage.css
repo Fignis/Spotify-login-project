@@ -1,0 +1,421 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    width: 100%;
+}
+/*Header styling*/
+.header-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    background-color: black;
+    padding: 20px;
+    width: 100%;
+}
+.header-menu{
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+}
+.header-logo{
+  vertical-align: middle;
+}
+.divider{
+    color: #eeeeee;
+}
+header{
+    text-align: center;;
+    width: 100%;
+}
+img{
+    width: 132px;
+    height: 37.89px;
+    margin-right: 470px;
+}
+a:hover{
+    color: #52D54D;
+}
+
+/*Profile Dropdown menu*/
+.profile-menu{
+  width: fit-content;
+  background-color: black;
+  border: none;
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+  text-align: center;
+}
+.profile-menu:hover{
+  color: #1ed760;
+}
+
+.profile-icon-top{
+  margin: 0;
+  width: 50px;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+  vertical-align: middle;
+}
+.dropbtn{
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.arrow{
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: middle;
+  margin:0 0 3px 6px;
+  
+}
+.down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*Main Flag*/
+:root {
+    --main1cl: rgb(255, 70, 50);
+    --txt: black;
+    --main2cl: #080c1f;
+    --txt2: #1ed760;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#212c39, #121e3d 50%, #000);
+  }
+  /* entire orange section of page */
+  section.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--main1cl);
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 30px;
+    width:1100px;
+    height: 480px;
+    margin: auto;
+  }
+  /* wraps both the text and image section */
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .mtxt {
+    width: 50%;
+    padding-left: 50px;
+    text-align: left;
+  }
+  .mtxt h1 {
+    font-size: 40px;
+    font-weight: 800;
+    width: 600px;
+    height: 100px;
+  }
+  .mtxt h2 {
+    font-weight: 200;
+    font-size: 24px;
+    width: 600px;
+    margin-bottom: 40px;
+  }
+  /*ballon image section of page */
+  .mimage {
+    background: url("imgs/balloon.png") no-repeat;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background-size: contain;
+    margin-left: 130px;
+    margin-top: 60px;
+    padding-left: 90px;
+    padding-bottom: 150px;
+  }
+  /*small text */
+  #smol {
+    display: inline-block;
+    font-size: 13px;
+    width: 700px;
+  }
+  #smol a {
+    color: var(--txt);
+  }
+  /*button animation there is a bug in this first one */
+  .button {
+    background: var(--txt);
+    width: 250px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+  .button:hover {
+    animation: changecolor 1s;
+  }
+  @keyframes changecolor {
+    from {
+      background: var(--txt);
+    }
+    to {
+      background: white;
+      color: var(--txt);
+    }
+  }
+/*Side-Nav*/
+.sideNav{
+    margin-left: 21.0%;
+}
+.wrap{
+    float: left;
+}
+
+.vertical-menu {
+    width: 280px; /* Set a width if you like */
+    height: 1000px;
+    background:  rgb(22, 22, 22);
+}
+
+.profile-icon{
+    width: 100px;
+    height: auto;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+  
+.vertical-menu a {
+    background-color: rgb(22, 22, 22); /* Grey background color */
+    color: rgb(88, 88, 88); /* Black text color */
+    font-size: large;
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    text-align: left;
+}
+  
+.vertical-menu a:hover {
+    border-left-color: 5px  green; /* Dark grey background on mouse-over */
+}
+  
+.vertical-menu a.active {
+    color: white;
+}
+
+/*Account page*/
+.account-page{
+    width: 1102px;
+    height: 1000px;
+    background: white;
+    margin: 0;
+    border: 0;
+}
+/*Edit Profile Page*/
+.edit-container {
+  align-items: center;
+  text-align: left;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  -webkit-box-pack: justify;
+
+  flex: 1;
+  padding: 48px;
+}
+.edit-container input {
+  width: 40rem;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+.edit-container p {
+  margin: 0 20px 0 0;
+}
+.selGendOpt {
+  width: 40rem;
+  padding: 1rem;
+}
+.edit-container label {
+  display: none;
+}
+
+.dob {
+  display: flex;
+  justify-items: space-evenly;
+  flex-direction: row;
+  margin: 0;
+}
+.dob > * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dob input {
+  width: 33%;
+}
+.dob select {
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+#editTitle {
+  margin-top: 30px;
+  margin-right: 400px;
+  font-weight: 800;
+  display: block;
+  font-size: 48px;
+  line-height: 54px;
+  margin-top: 0;
+}
+input[disabled] {
+  background-color: rgb(245, 246, 246);
+}
+.save-profile {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+.save-profile a {
+  text-decoration: none;
+  color: grey;
+}
+.save-profile a:hover {
+  color: black;
+}
+.save-profile button {
+  font-family: var(--ft);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--txt2);
+  border-radius: 10em;
+  border: 0;
+  padding: 17px 48px;
+}
+.save-profile button:hover {
+  animation: incSize 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes incSize {
+  from {
+    background: var(--txt2);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+.chkbxSmall p {
+  font-family: var(--ft2);
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 24px;
+}
+.chkbxSmall input {
+  border-radius: 4px;
+  color: var(--txt2);
+  opacity: 100%;
+  height: 16px;
+  width: 16px;
+}
+/*Footer Styling*/
+p{
+    margin: 0;
+    padding: 10px;
+}
+.footer-container{
+    color:rgb(145, 145, 145);
+    font-weight: bold;
+    font-size: 14px;
+    background-color: black;
+    width: 100%;
+    height: 20rem;
+    padding-top: 100px;
+    padding-left: 385px;
+}
+.footer-menu{
+    text-decoration: none;
+    color:#ffff;
+    font-weight: lighter;
+    font-size: 15.5px;
+    display: block;
+}
+.footer-nav{
+    background-color: black;
+    margin: 0;
+}
+.footer-child{
+    width: 10%;
+    float: left;
+}
+a{
+    padding: 10px;
+}
+.footer-info{
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding-left: 385px;
+    border: none;
+    width: 100%;
+    padding-bottom: 65px;
+}
+.footer-legal{
+    text-decoration:none;
+    color: rgb(172, 172, 172);
+    font-size: 11.5px;
+    font-weight: bold;
+}
+.Region{
+    display: inline-block;
+    color: rgb(168, 168, 168);
+    padding-left: 370px;
+    font-size: 11.5px;
+    font-weight: bolder;
+}
+.Region-text{
+    text-decoration: none;
+    color:rgb(156, 156, 156);
+    padding-left: 55px;
+}
+.us-flag{
+    width: 24px;
+    height: 18px;
+}
