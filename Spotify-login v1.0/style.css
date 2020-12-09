@@ -431,6 +431,112 @@ a {
 }
 /* Account styles */
 /*edit profile page */
+/*Profile Dropdown menu*/
+.profile-menu {
+  width: fit-content;
+  background-color: black;
+  border: none;
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 550;
+  text-align: center;
+}
+.profile-menu:hover {
+  color: #1ed760;
+}
+
+.profile-icon-top {
+  margin: 0;
+  width: 50px;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+  vertical-align: middle;
+}
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: middle;
+  margin: 0 0 3px 6px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/*Side-Nav*/
+.sideNav {
+  margin-left: 21%;
+}
+.wrap {
+  float: left;
+}
+
+.vertical-menu {
+  width: 280px; /* Set a width if you like */
+  height: 1000px;
+  background: rgb(22, 22, 22);
+}
+
+.profile-icon {
+  width: 100px;
+  height: auto;
+  margin-left: 90px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.vertical-menu a {
+  background-color: rgb(22, 22, 22); /* Grey background color */
+  color: rgb(88, 88, 88); /* Black text color */
+  font-size: large;
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  text-align: left;
+}
+
+.vertical-menu a:hover {
+  border-left-color: 5px green; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  color: white;
+}
+
+/*Account page*/
+.account-page {
+  width: 1102px;
+  height: 1000px;
+  background: white;
+  margin: 0;
+  border: 0;
+}
 .edit-container {
   align-items: center;
   text-align: left;
