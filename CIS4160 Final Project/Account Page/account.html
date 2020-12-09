@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Replica</title>
     <link rel="stylesheet" href="stylePage.css">
+
     <link rel="stylesheet" href="/loginPage/login-style.css">
-    <link rel="stylesheet" href="/Spotify-login v1.0/style.css">
+    <link rel="stylesheet" href="/style.css">
+
 </head>
+
 <body>
     <!--Header Nav-->
     <header>
         <div class="container">
             <ul class="header-nav">
-                <a class="header-menu" href="index.html"><img class = "header-logo" src="imgs/Spotify_Logo_CMYK_White.png"></a>
+                <a class="header-menu" href="index.html"><img class="header-logo"
+                        src="imgs/Spotify_Logo_CMYK_White.png"></a>
                 <a class="header-menu" href="https://www.spotify.com/us/premium/">Premium</a>
                 <a class="header-menu" href="https://support.spotify.com/us/">Support</a>
                 <a class="header-menu" href="https://www.spotify.com/us/download/windows/">Download</a>
@@ -48,11 +53,11 @@
                     </p>
                 </div>
             </div>
-            <div class="mimage">
-            </div>   
+            <div class="mimage-e">
+            </div>
         </div>
     </section>
-    
+
     <div class="sideNav">
         <div class="wrap">
             <div class="vertical-menu">
@@ -76,13 +81,13 @@
                 <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
                 <a href="#">Redeem</a>
                 <hr style="border: 0.1px solid rgb(32, 32, 32); border-top: none;">
-              </div>
-        </div> 
+            </div>
+        </div>
 
         <div class="account-page">
             <section class="edit-container">
                 <h1 id="editTitle">Edit Profile</h1>
-                <form method="GET" action="#" class="login-form">
+                <form method="POST" action="#" class="login-form">
                     <div>
                         <p class="text">Email</p>
                         <input type="text" name="username" placeholder="Username">
@@ -102,7 +107,7 @@
                             </option>
                         </select>
                     </div>
-        
+
                     <div>
                         <p class='text'>Date of birth</p>
                         <div class="dob">
@@ -168,59 +173,60 @@
                     </div>
                 </form>
             </section>
-        </div>  
-    </div>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-child"><a href="index.html"><img src="imgs/Spotify_Logo_CMYK_White.png"></a></div>
-            <div class="footer-child">
-                <ul class="footer-nav">
-                    <p>COMPANY</p>
-                    <a class="footer-menu" href="#">About</a>
-                    <a class="footer-menu" href="#">Jobs</a>
-                    <a class="footer-menu" href="#">For the Record</a>
-                </ul>
-            </div>
-            <div class="footer-child">
-                <ul class="footer-nav">
-                    <p>COMMUNITIES</p>
-                    <a class="footer-menu" href="#">For Artists</a>
-                    <a class="footer-menu" href="#">Developers</a>
-                    <a class="footer-menu" href="#">Advertising</a>
-                    <a class="footer-menu" href="#">investors</a>
-                    <a class="footer-menu" href="#">Vendors</a>
-                </ul>
-            </div>
-            <div class="footer-child">
-                <ul class="footer-nav">
-                    <p>USEFUL LINKS</p>
-                    <a class="footer-menu" href="#">Support</a>
-                    <a class="footer-menu" href="#">Web Player</a>
-                    <a class="footer-menu" href="#">Free Mobile App</a>
-                    <a class="footer-menu" href="#">2020 Wrapped</a>
-                </ul>
-            </div>
         </div>
-        <!--footer at the very bottom-->
-        <div class="footer-bot">
-            <ul class="footer-info">
-                <a class="footer-legal" href="#">Legal</a>
-                <a class="footer-legal" href="#">Privacy Center</a>
-                <a class="footer-legal" href="#">Privacy Policy</a>
-                <a class="footer-legal" href="#">Cookies</a>
-                <a class="footer-legal" href="#">About Ads</a>
-                <a class="footer-legal" href="#">Additional CA Privacy Disclosures</a>
-                <div class="Region">
-                    <a class="Region-text" href="#">USA
-                        <img class="us-flag" src="imgs/usflag.png"></a>
-                    <p>@2020 Spotify AB</p>
+
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-child"><a href="index.html"><img src="imgs/Spotify_Logo_CMYK_White.png"></a></div>
+                <div class="footer-child">
+                    <ul class="footer-nav">
+                        <p>COMPANY</p>
+                        <a class="footer-menu" href="#">About</a>
+                        <a class="footer-menu" href="#">Jobs</a>
+                        <a class="footer-menu" href="#">For the Record</a>
+                    </ul>
                 </div>
-                                
-            </ul>
-        </div>
-        
-        
-    </footer>
+                <div class="footer-child">
+                    <ul class="footer-nav">
+                        <p>COMMUNITIES</p>
+                        <a class="footer-menu" href="#">For Artists</a>
+                        <a class="footer-menu" href="#">Developers</a>
+                        <a class="footer-menu" href="#">Advertising</a>
+                        <a class="footer-menu" href="#">investors</a>
+                        <a class="footer-menu" href="#">Vendors</a>
+                    </ul>
+                </div>
+                <div class="footer-child">
+                    <ul class="footer-nav">
+                        <p>USEFUL LINKS</p>
+                        <a class="footer-menu" href="#">Support</a>
+                        <a class="footer-menu" href="#">Web Player</a>
+                        <a class="footer-menu" href="#">Free Mobile App</a>
+                        <a class="footer-menu" href="#">2020 Wrapped</a>
+                    </ul>
+                </div>
+            </div>
+            <!--footer at the very bottom-->
+            <div class="footer-bot">
+                <ul class="footer-info">
+                    <a class="footer-legal" href="#">Legal</a>
+                    <a class="footer-legal" href="#">Privacy Center</a>
+                    <a class="footer-legal" href="#">Privacy Policy</a>
+                    <a class="footer-legal" href="#">Cookies</a>
+                    <a class="footer-legal" href="#">About Ads</a>
+                    <a class="footer-legal" href="#">Additional CA Privacy Disclosures</a>
+                    <div class="Region">
+                        <a class="Region-text" href="#">USA
+                            <img class="us-flag" src="imgs/usflag.png"></a>
+                        <p>@2020 Spotify AB</p>
+                    </div>
+
+                </ul>
+            </div>
+
+
+        </footer>
 </body>
+
 </html>
