@@ -217,21 +217,22 @@ section.main {
 }
 
 .vertical-menu a {
-  background-color: rgb(22, 22, 22); /* Grey background color */
-  color: rgb(88, 88, 88); /* Black text color */
+  background-color: rgb(22, 22, 22); 
+  color: rgb(88, 88, 88);
   font-size: large;
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
   text-align: left;
 }
 
 .vertical-menu a:hover {
-  border-left-color: 5px green; /* Dark grey background on mouse-over */
+  border-left: 5px solid rgb(2, 182, 2);
 }
 
 .vertical-menu a.active {
   color: white;
+  border-left: 5px solid rgb(2, 182, 2);
 }
 
 /*Account page*/
@@ -242,6 +243,47 @@ section.main {
   margin: 0;
   border: 0;
 }
+/*Account Overview*/
+.content-container{
+  margin: 0;
+}
+.Section-title{
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 75px;
+}
+h3{
+  font-size: 25px;
+  font-weight: 750;
+  margin: 0;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+table{
+  margin: 40px 0 40px 70px;
+  text-align: left;
+  width: 700px;
+}
+th{
+  color: grey;
+  font-weight: 500;
+  padding: 10px;
+}
+.edit-btn{
+  text-decoration: none;
+  border: 2px solid grey;
+  border-radius: 30px;
+  margin-left:70px;
+  color: grey;
+  padding: 15px 50px;
+}
+.edit-btn:hover{
+  color: rgb(180, 180, 180);
+  border: 2px solid rgb(179, 179, 179);
+}
+
 /*Edit Profile Page*/
 .edit-container {
   align-items: center;
