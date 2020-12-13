@@ -1,6 +1,3 @@
-window.onscroll = function () {
-  sticky();
-};
 var nav = document.querySelector(".header-nav");
 var navPos = nav.offsetTop;
 
@@ -10,4 +7,7 @@ sticky = () => {
   } else {
     nav.classList.remove("stick");
   }
+};
+window.onscroll = function () {
+  sticky();
 };
